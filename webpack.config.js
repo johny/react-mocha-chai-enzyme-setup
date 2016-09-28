@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const buildDirectory = './dist/';
 
 module.exports = {
-   entry: './lib/main.jsx',
+   entry: './lib/main.js',
    devServer: {
     hot: true,
     inline: true,
@@ -13,7 +13,7 @@ module.exports = {
     historyApiFallback: true,
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.js'],
   },
   output: {
     path: path.resolve(buildDirectory),
